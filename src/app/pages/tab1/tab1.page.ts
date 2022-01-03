@@ -33,7 +33,8 @@ export class Tab1Page {
         this.dataLocal.guardarRegistro(barcodeData.format, barcodeData.text);
       }
      }).catch(err => {
-         console.log('Error', err);
+      console.log('Error', err);
+      this.dataLocal.guardarRegistro('QRData', 'https://telmed.paramedicapps.com.ar');
      });
   }
 
